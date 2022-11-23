@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body class="bg-mBg min-h-screen">
+    <div class="mx-auto max-w-xl">
+      <header class="flex items-center relative h-20 bg-mWhite">
+        <nav class="flex navbar justify-between px-5">
+          <h2 class="text-center text-mBlack text-2xl font-bold">TRAVEL</h2>
+          <div class="text-mBlack sm:hidden absolute right-3 menu">
+            <label class="btn btn-ghost btn-circle swap swap-rotate">
+              <input id="check" onchange="handleChange(this)" type="checkbox" />
+
+              <svg
+                class="swap-off fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+                />
+              </svg>
+
+              <!-- close icon -->
+              <svg
+                class="swap-on fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+              >
+                <polygon
+                  points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"
+                />
+              </svg>
+            </label>
+          </div>
+          <div
+            class="text-mBlack links opacity-0 sm:opacity-100 transition-all"
+          >
+            <ul
+              class="absolute sm:static bg-mWhite px-2 rounded-md py-2 -bottom-[150px] z-20 flex-col flex sm:flex-row right-4 gap-2 sm:gap-0 uppercase text-sm"
+            >
+              <li
+                class="py-1 hover:bg-slate-300 transition-colors text-center px-4 rounded-md"
+              >
+                <a href="">Home</a>
+              </li>
+              <li
+                class="py-1 hover:bg-slate-300 transition-colors text-center px-4 rounded-md"
+              >
+                <a href="">About</a>
+              </li>
+              <li
+                class="py-1 hover:bg-slate-300 transition-colors text-center px-4 rounded-md"
+              >
+                <a href="">Works</a>
+              </li>
+              <li
+                class="py-1 hover:bg-slate-300 transition-colors text-center px-4 rounded-md"
+              >
+                <a href="">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <section class="relative bg-mWhite">
+        <div>
+          <img src="./assets/bg_1.jpg" alt="background" />
+          <div class="absolute inset-0 bg-black/30"></div>
+        </div>
+        <div class="absolute inset-0 p-10 grid place-content-center">
+          <h1 class="text-center font-bold text-5xl text-mWhite">
+            Be a Traveler not a Tourist
+          </h1>
+        </div>
+      </section>
+      <section class="bg-mGray text-mWhite text-center">
+        <div class="w-3/4 mx-auto py-10 flex flex-col gap-5">
+          <h2 class="text-2xl font-bold">Welcome To Travel Agency</h2>
+          <p class="text-sm leading-7">
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia. It is a paradisematic country, in which
+            roasted parts of sentences fly into your mouth.
+          </p>
+        </div>
+      </section>
+      <main class="text-mBlack text-center py-10 bg-mWhite">
+        <div class="w-3/4 mx-auto">
+          <h2 class="text-xl font-bold">Best Destinations</h2>
+          <p class="text-mGray2 mt-5">
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-5 mt-10 w-full px-10">
+          <div>
+            <div>
+              <img src="./assets/destination-1.jpg" alt="landscape" />
+            </div>
+            <div class="py-2">
+              <h3 class="text-base font-bold mt-2">
+                Gurtnellen, <br />
+                Swetzerland
+              </h3>
+              <p class="text-sm text-mGray2 mt-2">10 days tour</p>
+            </div>
+          </div>
+          <!--end  -->
+          <div>
+            <div>
+              <img src="./assets/destination-2.jpg" alt="landscape" />
+            </div>
+            <div class="py-2">
+              <h3 class="text-base font-bold mt-2">
+                Gurtnellen, <br />
+                Swetzerland
+              </h3>
+              <p class="text-sm text-mGray2 mt-2">10 days tour</p>
+            </div>
+          </div>
+          <!--end  -->
+          <div>
+            <div>
+              <img src="./assets/destination-3.jpg" alt="landscape" />
+            </div>
+            <div class="py-2">
+              <h3 class="text-base font-bold mt-2">
+                Gurtnellen, <br />
+                Swetzerland
+              </h3>
+              <p class="text-sm text-mGray2 mt-2">10 days tour</p>
+            </div>
+          </div>
+          <!--end  -->
+          <div>
+            <div>
+              <img src="./assets/destination-4.jpg" alt="landscape" />
+            </div>
+            <div class="py-2">
+              <h3 class="text-base font-bold mt-2">
+                Gurtnellen, <br />
+                Swetzerland
+              </h3>
+              <p class="text-sm text-mGray2 mt-2">10 days tour</p>
+            </div>
+          </div>
+          <!-- end -->
+          <div>
+            <div>
+              <img src="./assets/destination-5.jpg" alt="landscape" />
+            </div>
+            <div class="py-2">
+              <h3 class="text-base font-bold mt-2">
+                Gurtnellen, <br />
+                Swetzerland
+              </h3>
+              <p class="text-sm text-mGray2 mt-2">10 days tour</p>
+            </div>
+          </div>
+          <!--end  -->
+          <div>
+            <div>
+              <img src="./assets/destination-6.jpg" alt="landscape" />
+            </div>
+            <div class="py-2">
+              <h3 class="text-base font-bold mt-2">
+                Gurtnellen, <br />
+                Swetzerland
+              </h3>
+              <p class="text-sm text-mGray2 mt-2">10 days tour</p>
+            </div>
+          </div>
+          <!-- end -->
+          <div>
+            <div>
+              <img src="./assets/destination-7.jpg" alt="landscape" />
+            </div>
+            <div class="py-2">
+              <h3 class="text-base font-bold mt-2">
+                Gurtnellen, <br />
+                Swetzerland
+              </h3>
+              <p class="text-sm text-mGray2 mt-2">10 days tour</p>
+            </div>
+          </div>
+          <!--end  -->
+          <div>
+            <div>
+              <img src="./assets/destination-8.jpg" alt="landscape" />
+            </div>
+            <div class="py-2">
+              <h3 class="text-base font-bold mt-2">
+                Gurtnellen, <br />
+                Swetzerland
+              </h3>
+              <p class="text-sm text-mGray2 mt-2">10 days tour</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- end of main -->
+      <section class="relative text-center text-mWhite">
+        <div class="h-52 overflow-hidden">
+          <img src="./assets/bg_1.jpg" alt="background" />
+        </div>
+        <div class="absolute inset-0 bg-black/30"></div>
+        <div class="flex absolute inset-0 justify-between items-center px-7">
+          <div>
+            <h3 class="text-4xl font-bold">200</h3>
+            <p class="mt-2 text-sm">Amazing Deals</p>
+          </div>
+          <div>
+            <h3 class="text-4xl font-bold">1200</h3>
+            <p class="mt-2 text-sm">Sold Tours</p>
+          </div>
+          <div>
+            <h3 class="text-4xl font-bold">1000</h3>
+            <p class="mt-2 text-sm">Happy Traveler</p>
+          </div>
+        </div>
+      </section>
+      <!-- end of section -->
+      <section class="p-10 bg-mWhite">
+        <div class="text-center">
+          <h2 class="text-3xl text-mBlack">Our blog</h2>
+          <p class="mx-5 leading-7 mt-3 text-sm">
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-5 mt-10">
+          <div class="leading-7">
+            <div>
+              <img src="./assets/blog-1.jpg" alt="destination" />
+            </div>
+            <div class="flex flex-col gap-5 mt-2">
+              <div>
+                <p class="text-base">Posted on Nov 22, 2022</p>
+              </div>
+              <div>
+                <p class="text-mBlack">Web Design Technique</p>
+              </div>
+              <div>
+                <p class="text-sm">
+                  Far far away, behind the word mountains, far from the
+                  countries
+                </p>
+              </div>
+              <div
+                class="bg-mOrange rounded-lg py-2 border cursor-pointer text-center text-mWhite w-28"
+              >
+                <p>Read more</p>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+          <div class="leading-7">
+            <div>
+              <img src="./assets/blog-2.jpg" alt="destination" />
+            </div>
+            <div class="flex flex-col gap-5 mt-2">
+              <div>
+                <p class="text-base">Posted on Nov 22, 2022</p>
+              </div>
+              <div>
+                <p class="text-mBlack">Business Key to Success</p>
+              </div>
+              <div>
+                <p class="text-sm">
+                  Far far away, behind the word mountains, far from the
+                  countries
+                </p>
+              </div>
+              <div
+                class="bg-mOrange rounded-lg py-2 border cursor-pointer text-center text-mWhite w-28"
+              >
+                <p>Read more</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of section -->
+      <section class="py-10 px-10 leading-7 bg-mBg2">
+        <div class="text-center">
+          <h2 class="text-2xl text-mBlack">Happy Tourist</h2>
+          <p class="mt-5 text-sm mx-2 leading-7">
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-5 mt-7">
+          <div>
+            <div class="rounded-full overflow-hidden w-4/6">
+              <img src="./assets/person_1.jpg" alt="person" />
+            </div>
+            <div class="mt-5">
+              <h3 class="text-xl text-mBlack mt-1">Ronald Tuff</h3>
+              <p>Businessman</p>
+              <p class="text-sm mt-2">
+                Far far away, behind the word mountains, far from the countries
+              </p>
+            </div>
+          </div>
+          <!--  -->
+          <div>
+            <div class="rounded-full overflow-hidden w-4/6">
+              <img src="./assets/person_2.jpg" alt="person" />
+            </div>
+            <div class="mt-5">
+              <h3 class="text-xl text-mBlack mt-1">Willam Clarson</h3>
+              <p>Businessman</p>
+              <p class="text-sm mt-2">
+                Far far away, behind the word mountains, far from the countries
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="flex gap-5 p-10 items-center bg-mWhite">
+        <div class="flex-1">
+          <img src="./assets/bg_2.jpg" alt="picture" />
+        </div>
+        <div class="flex-1">
+          <h2 class="text-mBlack text-3xl">Things to know before traveling</h2>
+          <ol class="mt-3 flex flex-col gap-5">
+            <li>
+              <h3 class="text-mBlack text-lg">1. Pack up your things</h3>
+              <p class="text-sm mt-1">
+                A small river named Duden flows by their place and supplies
+              </p>
+            </li>
+            <li>
+              <h3 class="text-mBlack text-lg">2. Search for Destination</h3>
+              <p class="text-sm mt-1">
+                A small river named Duden flows by their place and supplies
+              </p>
+            </li>
+            <li>
+              <h3 class="text-mBlack text-lg">3. Be Responsible</h3>
+              <p class="text-sm mt-1">
+                A small river named Duden flows by their place and supplies
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!-- end of section -->
+      <footer class="p-10 bg-mBlack">
+        <div class="flex gap-5">
+          <div class="flex-1">
+            <h2 class="text-xl">About</h2>
+            <p class="text-mGrayFt text-sm mt-3">
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia.
+            </p>
+          </div>
+          <div class="flex-1">
+            <h2 class="text-xl">Contact Info</h2>
+            <div class="text-mGrayFt text-sm flex mt-3 flex-col gap-2">
+              <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
+              <p>+2 392 3929 210</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between text-mGrayFt text-sm mt-6">
+          <p class="flex-1">© 2022 Travel. All Rights Reserved</p>
+          <p class=""><a href="#">Unsubcribe</a></p>
+        </div>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
